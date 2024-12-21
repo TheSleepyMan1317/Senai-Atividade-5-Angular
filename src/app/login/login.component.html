@@ -1,0 +1,23 @@
+<div id="meio" class="centralizado">
+        <div id="loginEspaco" class="centralizado" >
+            <div>
+            <div class="centralizado">
+            <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+            <form action="submitscript.php" target="dummyframe" id="login" #login="ngForm" (ngSubmit)="submits(login)">
+                <label for="nome">NOME</label><br>
+                <input type="text" id="nome" name="nome" ngModel><br><br>
+                <label for="senha">SENHA</label><br>
+                <input type="password" id="senha" name="senha" ngModel><br><br>
+                <input type="submit" value="submit" id="submit">
+            </form>
+            </div>
+            <div style="color:black; text-align: center; "><p id="aviso">Acesso negado</p></div>
+        </div>
+        </div>
+        <div id="userEspaco">
+            <h1 id="welcome">Bem vindo,</h1>
+            <button id="exit">X</button>
+            <hr>
+            <h1></h1>
+        </div>
+    </div>
